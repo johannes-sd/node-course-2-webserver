@@ -1,6 +1,9 @@
 const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
+
+const port = process.env.PORT || 8081;
+
 var app = express();
 
 hbs.registerPartials(__dirname + "/views/partials")
@@ -55,6 +58,6 @@ app.get("/bad", (req, res) => {
 
  
 
-app.listen(8081, () => {
-    console.log("Serveren startet på port 8081");
+app.listen(port, () => {
+    console.log(`Serveren startet på port ${port}`);
 }); 
