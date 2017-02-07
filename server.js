@@ -24,12 +24,12 @@ app.use((req, resp, next) => {
     
 });
 
-app.use((req, res, next) => {
-     res.render('maintenance.hbs', {
-     pageTitle: "maintenance",
-     maintenanceMessage: "This site is under maintenance"
-     });
- });
+// app.use((req, res, next) => {
+//      res.render('maintenance.hbs', {
+//      pageTitle: "maintenance",
+//      maintenanceMessage: "This site is under maintenance"
+//      });
+//  });
 
 app.get('/', (req, res) => {
     
